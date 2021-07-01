@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Staff from './pages/Staff/Staff';
 import Sequence from './pages/Sequence/Sequence';
 import Alerts from './pages/Alerts/Alerts';
 import routes from './routes';
@@ -15,10 +14,12 @@ function App() {
     <Fragment>
       <Switch>
         <Route exact path={routes.dashboard} component={Dashboard} />
-        <Route exact path={routes.staff} component={Staff} />
+        <Route exact path={routes.staff} component={DoctorsTab} />
         <Route exact path={routes.alerts} component={Alerts} />
         <Route exact path={routes.sequence} component={Sequence} />
-        {/* <Redirect to={routes.dashboard} />  */}
+        <Route exact path="/staff/assist" component={AssistantsTab} />
+        <Route exact path="/staff/recep" component={ReceptionistsTab} />
+        <Redirect to={routes.dashboard} /> 
       </Switch>
     </Fragment>
   );

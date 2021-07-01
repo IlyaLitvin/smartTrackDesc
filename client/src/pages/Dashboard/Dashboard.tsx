@@ -5,7 +5,7 @@ import DoctorWithRooms from '../../components/Doctors/DoctorWithRooms';
 export default function Dashboard() {
   return (
     <div>
-      {/* <SideBar /> */}
+      <SideBar />
       <DoctorWithRooms />
     </div>
   );

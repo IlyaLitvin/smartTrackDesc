@@ -1,11 +1,14 @@
 import React from 'react'
 import Doctors from '../../../components/Doctors/Doctors'
+import StaffNav from '../StaffNav'
+import SideBar from '../../../components/SideBar/SideBar'
 
 export default function DoctorsTab() {
     return (
         <div>
-            <h3>HELLO PIPL</h3>
-            {/* <Doctors /> */}
+            <SideBar />
+            <StaffNav />
+            <Doctors />
         </div>
     )
 }
