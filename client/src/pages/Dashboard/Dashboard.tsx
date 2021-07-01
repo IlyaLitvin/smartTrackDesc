@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import SideBar from '../../components/SideBar/SideBar';
+import DoctorWithRooms from '../../components/Doctors/DoctorWithRooms';
 
 export default function Dashboard() {
-    return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
-    )
+  return (
+    <div>
+      {/* <SideBar /> */}
+      <DoctorWithRooms />
+    </div>
+  );
 }

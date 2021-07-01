@@ -1,0 +1,40 @@
+.sidebar {
+  z-index: 1;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #212155;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header {
+  background-color: #212155;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+}
+
+.svg {
+  margin-right: 15px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.link:hover {
+  color: #fff;
+}
