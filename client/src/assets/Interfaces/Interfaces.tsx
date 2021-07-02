@@ -28,6 +28,20 @@ export interface IAssistantProps {
   assistantUpdate?: (assistantId: number, assistant: IAssistant) => void;
 }
 
+export interface IReceptionist {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+}
+
+export interface IReceptionistProps {
+  receptionist: IReceptionist;
+  index: number;
+  receptDelete?: (receptionistId: number) => void;
+  receptUpdate?: (receptionistId: number, receptionist: IReceptionist) => void;
+}
+
 export interface IRoom {
   id: number;
   name: string;

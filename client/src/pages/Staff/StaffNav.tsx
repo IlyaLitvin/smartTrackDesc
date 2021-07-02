@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 export default function StaffNav() {
   return (
     <div>
-      <button type="button">Add new</button>
       <ul>
         <li>
           <NavLink to="/staff/doctors">Doctors</NavLink>
